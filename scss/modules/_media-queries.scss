@@ -9,12 +9,13 @@
 // Larger than mobile
 @media (#{$bp-larger-than-mobile}) {
   .logo-mobile {
-    margin-top: 20px;
+    margin-top: 30px;
   }
+  .logo-tablet,
   .logo-desktop {
 	display: none;
   }
-  .left {
+  .logo .left {
     margin-right: 6.5px;
   }
 }
@@ -28,17 +29,28 @@
   .logo-mobile {
 	display:none;
   }
-  .logo-desktop {
+  .logo-tablet {
     display: block;
-	margin-top: 50px;
+	margin-top: 40px;
   }
-  .left {
-    margin-right: 19px;
+  .logo .left {
+    margin-right: 12px;
   }
 }
 
 // Larger than desktop
-@media (#{$bp-larger-than-desktop}) {}
+@media (#{$bp-larger-than-desktop}) {
+  .logo-tablet {
+	display:none;
+  }
+  .logo-desktop {
+    display: block;
+	margin-top: 40px;
+  }
+  .logo .left {
+    margin-right: 19px;
+  }
+}
 
 // Larger than Desktop HD
 @media (#{$bp-larger-than-desktophd}) {}

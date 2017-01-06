@@ -1,5 +1,12 @@
+.full-width {
+	width: 100%;
+	max-width: 100%;
+	clear: both;
+	margin: 0 auto;
+}
+
 .logo {
- text-align: center;
+ 	text-align: center;
 }
 
 //Not needed. Handled by retina.js
@@ -14,28 +21,149 @@
 //}
 
 .logo-mobile h1,
+.logo-tablet h1,
 .logo-desktop h1 {
- font-family: $font-logo-family; 
- text-transform: uppercase;
- margin-bottom: .1rem;
+	 font-family: $font-logo-family; 
+	 text-transform: uppercase;
+	 margin-bottom: .1rem;
 }
 .logo-mobile h1 {
- font-size: 27.53px;
+ 	font-size: 27.53px;
+}
+.logo-tablet h1 {
+ 	font-size: 45.65px;
 }
 .logo-desktop h1 {
- font-size: 73.32px;
+ 	font-size: 73.32px;
 }
 
 .logo-mobile h4 {
- font-size: 1em;
+ 	font-size: 1em;
+}
+.logo-tablet h4 {
+ 	font-size: 21.56px;
+ 	margin-top: -0.5rem;
 }
 .logo-desktop h4 {
- font-size: 2.488em;
- margin-top: -1rem;
+ 	font-size: 2.488em;
+ 	margin-top: -1rem;
 }
 
 .headline img {
- float: left;
- vertical-align: middle;
- margin: 5px 5px 00;
+ 	float: left;
+ 	vertical-align: middle;
+ 	margin: 5px 5px 0 0;
+}
+
+/* nav */
+nav {
+	 @extend %clearfix;
+	 width: 95%;
+	 height: 50px;
+}
+nav .nav-logo {
+	float: left;
+	margin: 14px 0 0 5% ;
+}
+nav .nav-open,
+.overlay {
+	font-family: $font-header-family;
+	height:50px;
+	width: 100%;
+	text-align: right;
+}
+
+nav .nav-open:before {    /* create a full-height inline block pseudo=element */
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle;  /* vertical alignment of the inline element */
+    height: 100%;
+}
+
+nav .nav-open div,
+.overlay .closebtn {
+	display: inline-block;
+    vertical-align: middle;
+	margin-right: 5%;
+}
+
+nav div p,
+.overlay .closebtn p {
+	font-size: 1.6em;
+	float: right;
+	margin: 11px 0 0 10px;
+}
+
+.overlay .closebtn p {
+	color: $bg;
+	margin-top: 13px;
+}
+
+nav .nav-open img,
+.overlay .closebtn img {
+	float: right;
+	margin-top: 18px;
+}
+
+nav div p:hover,
+.overlay .closebtn p:hover,
+nav .nav-open img,
+.overlay .closebtn img {
+	cursor: pointer;
+}
+
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */    
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+//.overlay .closebtn {
+//    position: absolute;
+//    top: 20px;
+//    right: 45px;
+//}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+//    .overlay .closebtn {
+//        font-size: 40px;
+//        top: 15px;
+//        right: 35px;
+//    }
 }

@@ -47,10 +47,37 @@
 
 </head>
 <body>
+  <nav class="full-width">
+   <div id="myNav" class="overlay">
+   <!-- Button to close the overlay navigation -->
+     <div href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+	   <p>CLOSE</p>
+	   <img src="images/nav-close.png" data-rjs="2">
+     </div>
 
+   <!-- Overlay content -->
+	 <div class="overlay-content">
+	  <a href="#">About</a>
+	  <a href="#">Services</a>
+	  <a href="#">Clients</a>
+	  <a href="#">Contact</a>
+	 </div>
+
+   </div>
+
+   <!-- Use any element to open/show the overlay navigation menu -->
+   <img class="nav-logo" src="images/nav-logo.png" data-rjs="2">
+   <div class="nav-open" onclick="openNav()">
+	   <div>
+		 <p>MENU</p>
+		 <img src="images/nav-open.png" data-rjs="2">
+	   </div>
+   </div> 
+  </nav>
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
- <div class="container">
+  
+  <div class="container">
 
   <!-- columns should be the immediate child of a .row
   <div class="row">
@@ -58,23 +85,33 @@
     <div class="eleven columns example-grid">Eleven</div>
   </div>
   // columns should be the immediate child of a .row -->
-  <div class="row">
-    <div class="u-full-width logo logo-mobile">
-	  <img class="left" src="images/logo-left-mobile.png" data-rjs="2">
-	  <img src="images/logo-right-mobile.png" data-rjs="2">
-	  <h1>Jovan Laurencio</h1>
-	  <h4>Product Designer</h4>	
-	</div>
-    <div class="u-full-width logo logo-desktop">
-	  <img class="left" src="images/logo-left.png" data-rjs="2">
-	  <img src="images/logo-right.png" data-rjs="2">
-      <h1>Jovan Laurencio</h1>
-	  <h4>Product Designer</h4>	
-	</div>
-	<div class="u-full-width logo">
-	  
-	</div>
-  </div>
+ <!-- The overlay -->
+  
+  <section class="hero">
+	  <div class="row">
+		<div class="u-full-width logo logo-mobile">
+		  <img class="left" src="images/logo-left-mobile.png" data-rjs="2">
+		  <img src="images/logo-right-mobile.png" data-rjs="2">
+		  <h1>Jovan Laurencio</h1>
+		  <h4>Product Designer</h4>	
+		</div>
+		<div class="u-full-width logo logo-tablet">
+		  <img class="left" src="images/logo-left-tablet.png" data-rjs="2">
+		  <img src="images/logo-right-tablet.png" data-rjs="2">
+		  <h1>Jovan Laurencio</h1>
+		  <h4>Product Designer</h4>	
+		</div>
+		<div class="u-full-width logo logo-desktop">
+		  <img class="left" src="images/logo-left.png" data-rjs="2">
+		  <img src="images/logo-right.png" data-rjs="2">
+		  <h1>Jovan Laurencio</h1>
+		  <h4>Product Designer</h4>	
+		</div>
+		<div class="u-full-width logo">
+
+		</div>
+	  </div>
+  </section>
   <div class="row">
     <div class="u-full-width headline">
 		<img src="images/headline-hello.png" data-rjs="2">
@@ -114,6 +151,7 @@
  <!-- JS
  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
  <script type="text/javascript" src="js/retina.js"></script>
+ <script type="text/javascript" src="js/nav.js"></script>
 
  <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

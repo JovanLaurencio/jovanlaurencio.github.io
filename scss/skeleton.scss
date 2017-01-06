@@ -8,7 +8,7 @@
 * Sass Version by Seth Coelen https://github.com/whatsnewsaes
 */
 
-/* Base files. */
+/* Base files */
 @import "base/normalize";
 @import "base/variables";
 @import "base/functions";
@@ -28,3 +28,6 @@
 
 /* Custom */
 @import "custom/custom";
+
+/* Mixins */
+@import "custom/mixins";
