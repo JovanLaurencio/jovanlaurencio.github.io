@@ -608,16 +608,19 @@ form {
   margin-bottom: 2.5rem; }
 
 @media (min-width: 400px) {
+  .logo-mobile {
+    margin-top: 20px; }
   .logo-desktop {
     display: none; }
   .left {
     margin-right: 6.5px; } }
 
-@media (min-width: 550px) {
+@media (min-width: 750px) {
   .logo-mobile {
     display: none; }
   .logo-desktop {
-    display: block; }
+    display: block;
+    margin-top: 50px; }
   .left {
     margin-right: 19px; } }
 

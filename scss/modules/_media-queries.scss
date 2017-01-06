@@ -8,6 +8,9 @@
 
 // Larger than mobile
 @media (#{$bp-larger-than-mobile}) {
+  .logo-mobile {
+    margin-top: 20px;
+  }
   .logo-desktop {
 	display: none;
   }
@@ -18,20 +21,20 @@
 
 // Larger than phablet (also point when grid becomes active)
 @media (#{$bp-larger-than-phablet}) {
+}
+
+// Larger than tablet
+@media (#{$bp-larger-than-tablet}) {
   .logo-mobile {
 	display:none;
   }
   .logo-desktop {
     display: block;
+	margin-top: 50px;
   }
   .left {
     margin-right: 19px;
   }
-}
-
-// Larger than tablet
-@media (#{$bp-larger-than-tablet}) {
-	
 }
 
 // Larger than desktop
