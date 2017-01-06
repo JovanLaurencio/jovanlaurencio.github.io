@@ -7,13 +7,32 @@
 // there.
 
 // Larger than mobile
-@media (#{$bp-larger-than-mobile}) {}
+@media (#{$bp-larger-than-mobile}) {
+  .logo-desktop {
+	display: none;
+  }
+  .left {
+    margin-right: 6.5px;
+  }
+}
 
 // Larger than phablet (also point when grid becomes active)
-@media (#{$bp-larger-than-phablet}) {}
+@media (#{$bp-larger-than-phablet}) {
+  .logo-mobile {
+	display:none;
+  }
+  .logo-desktop {
+    display: block;
+  }
+  .left {
+    margin-right: 19px;
+  }
+}
 
 // Larger than tablet
-@media (#{$bp-larger-than-tablet}) {}
+@media (#{$bp-larger-than-tablet}) {
+	
+}
 
 // Larger than desktop
 @media (#{$bp-larger-than-desktop}) {}

@@ -1,0 +1,41 @@
+.logo {
+ text-align: center;
+}
+
+//Not needed. Handled by retina.js
+//.logo-mobile img {
+// width: 30px;
+// height: auto;
+//}
+//
+//.logo-desktop img {
+// width: 80px;
+// height: auto;
+//}
+
+.logo-mobile h1,
+.logo-desktop h1 {
+ font-family: $font-logo-family; 
+ text-transform: uppercase;
+ margin-bottom: .1rem;
+}
+.logo-mobile h1 {
+ font-size: 27.53px;
+}
+.logo-desktop h1 {
+ font-size: 73.32px;
+}
+
+.logo-mobile h4 {
+ font-size: 1em;
+}
+.logo-desktop h4 {
+ font-size: 2.488em;
+ margin-top: -1rem;
+}
+
+.headline img {
+ float: left;
+ vertical-align: middle;
+ margin: 5px 5px 00;
+}
