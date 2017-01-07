@@ -205,12 +205,12 @@ body {
   line-height: 1.6;
   font-weight: 400;
   font-family: "Open Sans", sans-serif;
-  color: #222; }
+  color: #333; }
 
 a {
-  color: #1eaedb; }
+  color: #76ca9a; }
   a:hover {
-    color: #1b9cc5; }
+    color: #f7faf8; }
 
 hr {
   margin-top: 3rem;
@@ -635,6 +635,9 @@ form {
     margin-right: 19px; } }
 
 /* Custom */
+html {
+  background-color: #f7faf8; }
+
 .full-width {
   width: 100%;
   max-width: 100%;
@@ -679,17 +682,21 @@ form {
 /* nav */
 nav {
   width: 95%;
-  height: 50px; }
+  height: 50px;
+  background-color: white; }
 
 nav .nav-logo {
   float: left;
   margin: 14px 0 0 5%; }
 
-nav .nav-open,
-.overlay {
+nav .nav-open {
   font-family: "Droid Sans Mono", monospace;
   height: 50px;
   width: 100%;
+  text-align: right; }
+
+.overlay {
+  font-family: "Droid Sans Mono", monospace;
   text-align: right; }
 
 nav .nav-open:before {
@@ -700,26 +707,39 @@ nav .nav-open:before {
   /* vertical alignment of the inline element */
   height: 100%; }
 
-nav .nav-open div,
-.overlay .closebtn {
+nav .nav-open div {
   display: inline-block;
   vertical-align: middle;
   margin-right: 5%; }
 
-nav div p,
-.overlay .closebtn p {
+.closebtn {
+  width: 100px;
+  position: relative;
+  margin-right: 5%;
+  float: right; }
+
+nav div p {
   font-size: 1.6em;
   float: right;
-  margin: 11px 0 0 10px; }
+  margin: 10px 0 0 10px;
+  transition: 0.3s; }
+
+nav .nav-open img {
+  float: right;
+  margin-top: 16px; }
 
 .overlay .closebtn p {
-  color: #f7faf8;
-  margin-top: 13px; }
+  font-size: 1.6em;
+  margin: 10px 0 0 10px;
+  position: absolute;
+  left: 25px;
+  transition: 0.3s;
+  color: #f7faf8; }
 
-nav .nav-open img,
 .overlay .closebtn img {
-  float: right;
-  margin-top: 18px; }
+  position: absolute;
+  left: 0;
+  margin-top: 16px; }
 
 nav div p:hover,
 .overlay .closebtn p:hover,
@@ -748,38 +768,35 @@ nav .nav-open img,
   /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */ }
 
 /* Position the content inside the overlay */
-.overlay-content {
+#overlay-content {
   position: relative;
   top: 25%;
   /* 25% from the top */
   width: 100%;
   /* 100% width */
   text-align: center;
-  /* Centered text/links */
-  margin-top: 30px;
-  /* 30px top margin to avoid conflict with the close button on smaller screens */ }
+  /* Centered text/links */ }
 
 /* The navigation links inside the overlay */
 .overlay a {
   padding: 8px;
   text-decoration: none;
-  font-size: 36px;
-  color: #818181;
+  color: #f7faf8;
   display: block;
   /* Display block instead of inline */
   transition: 0.3s;
   /* Transition effects on hover (color) */ }
 
 /* When you mouse over the navigation links, change their color */
-.overlay a:hover, .overlay a:focus {
-  color: #f1f1f1; }
+nav div p:hover {
+  color: #4CBA7A; }
+
+.overlay a:hover,
+.overlay a:focus,
+.closebtn p:hover {
+  color: #76ca9a; }
 
 /* Position the close button (top right corner) */
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-@media screen and (max-height: 450px) {
-  .overlay a {
-    font-size: 20px; } }
-
 /* Mixins */
 nav {
   *zoom: 1; }
