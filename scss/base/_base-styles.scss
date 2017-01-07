@@ -20,9 +20,9 @@ body {
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
 a {
-  color: $link-color;
+  color: $ltgrn;
   &:hover {
-    color: darken($link-color, 5%);
+    color: $bg;
   }
 }
 
