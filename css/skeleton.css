@@ -198,9 +198,13 @@ th {
 * Sass Version by Seth Coelen https://github.com/whatsnewsaes
 */
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  overflow: hidden;
+  height: 100%; }
 
 body {
+  height: 100%;
+  overflow: auto;
   font-size: 1.3em;
   line-height: 1.6;
   font-weight: 400;
@@ -255,6 +259,12 @@ ul li {
 
 .u-pull-left {
   float: left; }
+
+.fixed-top {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 999; }
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
@@ -632,6 +642,8 @@ form {
   margin-bottom: 2.5rem; }
 
 @media (min-width: 400px) {
+  .container {
+    padding-top: 64px; }
   /* nav */
   nav {
     height: 64px; }
@@ -646,6 +658,8 @@ form {
     margin-right: 6.5px; } }
 
 @media (min-width: 750px) {
+  .container {
+    padding-top: 50px; }
   nav {
     height: 50px; }
   :before {
@@ -720,7 +734,8 @@ html {
 /* nav */
 #nav {
   width: 100%;
-  background-color: white; }
+  background-color: white;
+  height: 50px; }
 
 nav {
   background-color: white;

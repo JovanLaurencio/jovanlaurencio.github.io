@@ -8,7 +8,10 @@
 
 // Larger than mobile
 @media (#{$bp-larger-than-mobile}) {
-  /* nav */
+  .container {
+	padding-top: 64px;
+  }
+	/* nav */
   nav {
 	 height: 64px;
   }
@@ -33,7 +36,10 @@
 
 // Larger than tablet
 @media (#{$bp-larger-than-tablet}) {
-  nav {
+  .container {
+	padding-top: 50px;
+  }
+	nav {
 	 height: 50px;
   }
 		&:before {
