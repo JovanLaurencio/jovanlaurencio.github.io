@@ -49,111 +49,123 @@
 <body>
   <!-- Nav
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->	
-  <nav class="full-width">
-   <img class="nav-logo" src="images/nav-logo.png" data-rjs="2">
-   <div id="myNav" class="overlay">
-   <!-- Button to close the overlay navigation -->
-     <div href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-	   <p>CLOSE</p>
-	   <img src="images/nav-close.png" data-rjs="2">
-     </div>
-
-   <!-- Overlay content -->
-	 <div id="overlay-content">
-	  <a href="#">About</a>
-	  <a href="#">Services</a>
-	  <a href="#">Clients</a>
-	  <a href="#">Contact</a>
-	 </div>
-
-   </div>
-   <!-- The overlay -->
-	  
-   <!-- Use any element to open/show the overlay navigation menu -->
-   <div class="nav-open" onclick="openNav()">
-	   <div>
-		 <p>MENU</p>
-		 <img src="images/nav-open.png" data-rjs="2">
-	   </div>
-   </div> 
-  </nav>
+  <section id="nav" class="u-full-width">
+		<nav class="full-width">
+			<img class="nav-logo" src="images/nav-logo.png" data-rjs="2" />
+			<div class="nav">
+					<ul>
+						<!-- remove character space -->
+						<!-- between inline-block elements -->
+						<!-- by adding to one line -->
+						<li><a href="#"><img src="images/headline-case-study.png" data-rjs="2" /><span>Case Studies</span></a></li><li><a href="#"><img src="images/headline-hello.png" data-rjs="2" /><span>About</span></a></li><li><a href="#"><img src="images/headline-contact.png" data-rjs="2" /><span>Contact</span></a></li>
+					</ul>
+			</div>
+		</nav>
+  </section>
 	
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– --> 
   <div class="container">
-
-  <!-- columns should be the immediate child of a .row
-  <div class="row">
-    <div class="one column example-grid">One</div>
-    <div class="eleven columns example-grid">Eleven</div>
-  </div>
-  // columns should be the immediate child of a .row -->
   
   <section class="hero">
 	  <div class="row">
 		<div class="u-full-width logo logo-mobile">
-		  <img class="left" src="images/logo-left-mobile.png" data-rjs="2">
-		  <img src="images/logo-right-mobile.png" data-rjs="2">
 		  <h1>Jovan Laurencio</h1>
 		  <h4>Product Designer</h4>	
 		</div>
 		<div class="u-full-width logo logo-tablet">
-		  <img class="left" src="images/logo-left-tablet.png" data-rjs="2">
-		  <img src="images/logo-right-tablet.png" data-rjs="2">
 		  <h1>Jovan Laurencio</h1>
 		  <h4>Product Designer</h4>	
 		</div>
 		<div class="u-full-width logo logo-desktop">
-		  <img class="left" src="images/logo-left.png" data-rjs="2">
-		  <img src="images/logo-right.png" data-rjs="2">
 		  <h1>Jovan Laurencio</h1>
 		  <h4>Product Designer</h4>	
 		</div>
-		<div class="u-full-width logo">
-
-		</div>
 	  </div>
   </section>
-  <div class="row">
-    <div class="u-full-width headline">
-		<img src="images/headline-hello.png" data-rjs="2">
-		<h1>HELLO</h1>
-	</div>
-  </div>
-  <div class="row">
-    <div class="u-full-width headline">
-		<img src="images/headline-case-study.png" data-rjs="2">
-		<h1>CASE STUDIES</h1>
-	</div>
-  </div>
-  <div class="row">
-    <div class="u-full-width headline">
-		<img src="images/headline-contact.png" data-rjs="2">
-		<h1>CONTACT</h1>
-	</div>
-  </div>
-
-  <!-- just use a number and class 'column' or 'columns'
-  <div class="row">
-    <div class="two columns example-grid">Two</div>
-    <div class="ten columns example-grid red">Ten</div>
-  </div>
-
-  <!-- there are a few shorthand columns widths as well
-  <div class="row">
-    <div class="one-third column example-grid">1/3</div>
-    <div class="two-thirds column example-grid">2/3</div>
-  </div>
-  <div class="row">
-    <div class="one-half column example-grid">1/2</div>
-    <div class="one-half column example-grid">1/2</div>
-  </div> -->
-
+  <section id="case-studies">
+		<div class="row headline">
+			<img src="images/headline-case-study.png" data-rjs="2">
+			<h1>CASE STUDIES</h1>
+			<div class="case-study">
+				<h2><a>&#91;Waitless&#93;</a></h2>
+				<ul>
+					<li>Drink order and Payment</li>
+					<li>Mobile and Watch App</li>
+				</ul>
+				<img src="images/case-place.png" />
+			</div>
+			<div class="case-study">
+				<h2><a>&#91;Rise &amp; Shine Cold Brew&#93;</a></h2>
+				<ul>
+					<li>Drink order and Payment</li>
+					<li>Mobile and Watch App</li>
+				</ul>
+				<img src="images/case-place.png" />
+			</div>
+			<div class="case-study">
+				<h2><a>&#91;MakeIT&#93;</a></h2>
+				<ul>
+					<li>Drink order and Payment</li>
+					<li>Mobile and Watch App</li>
+				</ul>
+				<img src="images/case-place.png" />
+			</div>
+		</div>
+  </section>
+  <section class="about">
+		<div class="row headline">
+			<img src="images/headline-hello.png" data-rjs="2">
+			<h1>ABOUT</h1>
+			<div class="one-half column">
+				<p>FILLER TEXT GOES HERE. I’m Jovan. I craft solutions that are thought-provoking, emotional, and intuitive. My design process begins with curiosity and is fueled by a passionate pursuit to solve user needs and achieve business goals.</p>
+				<ul>
+					<!-- remove character space -->
+					<!-- between inline-block elements -->
+					<!-- by adding to one line -->
+					<li>user research</li>
+					<li>personas</li>
+					<li>user flows</li>
+					<li>competitive analysis</li>
+					<li>branding</li>
+					<li>wireframes</li>
+					<li>prototypes</li>
+	        <li>user tests</li>
+				</ul>
+				<p>See these skills in action in one of my <a href="#case-study">case studies</a>.</p>
+		  </div>
+			<div class="one-half column">
+			  <img src="#" data-rjs="2" />
+			</div>
+	  </div>
+  </section>
+  <section class="contact">
+		<div class="row headline">
+			<img src="images/headline-contact.png" data-rjs="2">
+			<h1>CONTACT</h1>
+			<div id="form">
+<!--
+			  <form>
+			  </form>
+				<p>OR</p>
+-->
+				<h2><a href="mailto:#">hello@jovan.laurenc.io</a></h2>
+			</div>
+			<div>
+				<p>OR</p>
+				<ul>
+					<!-- remove character space -->
+					<!-- between inline-block elements -->
+					<!-- by adding to one line -->
+					<li><a href="#" target="_blank">Linkedin</a></li><li><a href="#" target="_blank">Github</a></li><li><a href="#" target="_blank">Twitter</a></li>
+				</ul>
+			</div>
+		</div>
+  </section>
  </div>
  <!-- JS
  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
  <script type="text/javascript" src="js/retina.js"></script>
- <script type="text/javascript" src="js/nav.js"></script>
 
  <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

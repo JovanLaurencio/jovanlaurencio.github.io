@@ -205,18 +205,22 @@ body {
   line-height: 1.6;
   font-weight: 400;
   font-family: "Open Sans", sans-serif;
-  color: #333; }
+  color: #222; }
 
 a {
-  color: #76ca9a; }
+  color: #39935E;
+  transition: 0.3s ease-in-out; }
   a:hover {
-    color: #f7faf8; }
+    color: #76ca9a; }
 
 hr {
   margin-top: 3rem;
   margin-bottom: 3.5rem;
   border-width: 0;
-  border-top: 1px solid #e1e1e1; }
+  border-top: 1px solid #4CBA7A; }
+
+ul li {
+  list-style-type: disc; }
 
 .u-full-width {
   width: 100%;
@@ -289,12 +293,12 @@ p {
 
 @media (min-width: 400px) {
   .container {
-    width: 85%;
+    width: 95%;
     padding: 0; } }
 
 @media (min-width: 550px) {
   .container {
-    width: 80%; }
+    width: 95%; }
   .column,
   .columns {
     margin-left: 4%; }
@@ -608,6 +612,11 @@ form {
   margin-bottom: 2.5rem; }
 
 @media (min-width: 400px) {
+  /* nav */
+  nav {
+    height: 64px; }
+  :before {
+    padding-top: 20px; }
   .logo-mobile {
     margin-top: 30px; }
   .logo-tablet,
@@ -617,6 +626,10 @@ form {
     margin-right: 6.5px; } }
 
 @media (min-width: 750px) {
+  nav {
+    height: 50px; }
+  :before {
+    padding-top: 15px; }
   .logo-mobile {
     display: none; }
   .logo-tablet {
@@ -626,6 +639,8 @@ form {
     margin-right: 12px; } }
 
 @media (min-width: 1000px) {
+  .nav {
+    margin-right: 1%; }
   .logo-tablet {
     display: none; }
   .logo-desktop {
@@ -640,9 +655,12 @@ html {
 
 .full-width {
   width: 100%;
-  max-width: 100%;
+  max-width: 1200px;
   clear: both;
   margin: 0 auto; }
+
+.column:first-of-type {
+  margin-left: 0 !important; }
 
 .logo {
   text-align: center; }
@@ -674,129 +692,57 @@ html {
   font-size: 2.488em;
   margin-top: -1rem; }
 
-.headline img {
+.headline > img {
   float: left;
   vertical-align: middle;
   margin: 5px 5px 0 0; }
 
 /* nav */
-nav {
-  width: 95%;
-  height: 50px;
+#nav {
+  width: 100%;
   background-color: white; }
 
-nav .nav-logo {
-  float: left;
-  margin: 14px 0 0 5%; }
+nav {
+  background-color: white;
+  width: 100%; }
+  nav .nav-logo {
+    margin-left: 3%; }
+  nav .nav {
+    width: 77%;
+    float: right;
+    max-width: 400px; }
+    nav .nav ul {
+      list-style: none; }
+      nav .nav ul li {
+        display: inline-block;
+        width: 33%;
+        text-align: center; }
+      nav .nav ul li:nth-child(2) a {
+        padding-left: 10px; }
+      nav .nav ul a img {
+        vertical-align: sub; }
+      nav .nav ul a span {
+        margin-left: 5px; }
 
-nav .nav-open {
-  font-family: "Droid Sans Mono", monospace;
-  height: 50px;
-  width: 100%;
-  text-align: right; }
+/* Contact nav */
+.contact ul {
+  list-style: none;
+  font-family: "Droid Sans Mono", monospace; }
+  .contact ul li {
+    display: inline-block;
+    margin-right: 25px; }
+    .contact ul li:nth-child(n+2)a {
+      padding: 5px 10px; }
 
-.overlay {
-  font-family: "Droid Sans Mono", monospace;
-  text-align: right; }
+/* case study */
+.case-study {
+  margin-bottom: 30px;
+  width: 100%; }
+  .case-study img {
+    width: 100%; }
+  .case-study h2 a:hover {
+    cursor: pointer; }
 
-nav .nav-open:before {
-  /* create a full-height inline block pseudo=element */
-  content: ' ';
-  display: inline-block;
-  vertical-align: middle;
-  /* vertical alignment of the inline element */
-  height: 100%; }
-
-nav .nav-open div {
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 5%; }
-
-.closebtn {
-  width: 100px;
-  position: relative;
-  margin-right: 5%;
-  float: right; }
-
-nav div p {
-  font-size: 1.6em;
-  float: right;
-  margin: 10px 0 0 10px;
-  transition: 0.3s; }
-
-nav .nav-open img {
-  float: right;
-  margin-top: 16px; }
-
-.overlay .closebtn p {
-  font-size: 1.6em;
-  margin: 10px 0 0 10px;
-  position: absolute;
-  left: 25px;
-  transition: 0.3s;
-  color: #f7faf8; }
-
-.overlay .closebtn img {
-  position: absolute;
-  left: 0;
-  margin-top: 16px; }
-
-nav div p:hover,
-.overlay .closebtn p:hover,
-nav .nav-open img,
-.overlay .closebtn img {
-  cursor: pointer; }
-
-/* The Overlay (background) */
-.overlay {
-  /* Height & width depends on how you want to reveal the overlay (see JS below) */
-  height: 100%;
-  width: 0;
-  position: fixed;
-  /* Stay in place */
-  z-index: 1;
-  /* Sit on top */
-  left: 0;
-  top: 0;
-  background-color: black;
-  /* Black fallback color */
-  background-color: rgba(0, 0, 0, 0.9);
-  /* Black w/opacity */
-  overflow-x: hidden;
-  /* Disable horizontal scroll */
-  transition: 0.5s;
-  /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */ }
-
-/* Position the content inside the overlay */
-#overlay-content {
-  position: relative;
-  top: 25%;
-  /* 25% from the top */
-  width: 100%;
-  /* 100% width */
-  text-align: center;
-  /* Centered text/links */ }
-
-/* The navigation links inside the overlay */
-.overlay a {
-  padding: 8px;
-  text-decoration: none;
-  color: #f7faf8;
-  display: block;
-  /* Display block instead of inline */
-  transition: 0.3s;
-  /* Transition effects on hover (color) */ }
-
-/* When you mouse over the navigation links, change their color */
-nav div p:hover {
-  color: #4CBA7A; }
-
-.overlay a:hover,
-.overlay a:focus,
-.closebtn p:hover {
-  color: #76ca9a; }
-
-/* Position the close button (top right corner) */
 /* Mixins */
 nav {
   *zoom: 1; }

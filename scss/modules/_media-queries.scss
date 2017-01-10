@@ -8,6 +8,13 @@
 
 // Larger than mobile
 @media (#{$bp-larger-than-mobile}) {
+  /* nav */
+  nav {
+	 height: 64px;
+  }
+	  &:before {
+      padding-top: 20px;
+    }
   .logo-mobile {
     margin-top: 30px;
   }
@@ -26,6 +33,12 @@
 
 // Larger than tablet
 @media (#{$bp-larger-than-tablet}) {
+  nav {
+	 height: 50px;
+  }
+		&:before {
+			padding-top: 15px;
+		}
   .logo-mobile {
 	display:none;
   }
@@ -40,12 +53,15 @@
 
 // Larger than desktop
 @media (#{$bp-larger-than-desktop}) {
-  .logo-tablet {
-	display:none;
+  .nav {
+	  margin-right: 1%;
+	}
+	.logo-tablet {
+	  display:none;
   }
   .logo-desktop {
     display: block;
-	margin-top: 40px;
+	  margin-top: 40px;
   }
   .logo .left {
     margin-right: 19px;

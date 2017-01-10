@@ -16,15 +16,23 @@ body {
   color: $font-color;
 }
 
+
 // Links
 //––––––––––––––––––––––––––––––––––––––––––––––––––
-
 a {
-  color: $ltgrn;
+  color: $dkgrn;
+	transition: 0.3s ease-in-out;
   &:hover {
-    color: $bg;
+    color: $ltgrn;
   }
 }
+
+//nav a {
+//  color: $dkgrn;
+//  &:hover {
+//    color: $ltgrn;
+//  }
+//}
 
 // Misc
 //––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -33,5 +41,9 @@ hr {
   margin-top: 3rem;
   margin-bottom: 3.5rem;
   border-width: 0;
-  border-top: 1px solid $light-grey;
+  border-top: 1px solid $prmgrn;
+}
+
+ul li {
+	list-style-type: disc;
 }

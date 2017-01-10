@@ -15,12 +15,13 @@ $primary-color: #33c3f0 !default;
 $secondary-color: lighten($dark-grey, 13.5%) !default;
 $border-color: #bbb !default;
 $link-color: #1eaedb ;
-$font-color: #333 !default;
+$font-color: #222 !default;
 
 // Palette
 $bg: #f7faf8;
 $ltgrn: #76ca9a;
 $prmgrn: #4CBA7A;
+$dkgrn: #39935E;
 
 
 // Typography
@@ -30,8 +31,8 @@ $font-family: 'Open Sans', sans-serif !default;
 
 //Grid Variables
 $container-width: 960px !default;
-$container-width-larger-than-mobile: 85% !default;
-$container-width-larger-than-phablet: 80% !default;
+$container-width-larger-than-mobile: 95% !default;
+$container-width-larger-than-phablet: 95% !default;
 $total-columns: 12 !default;
 $column-width: 100 / $total-columns !default; // calculates individual column width based off of # of columns
 $column-margin: 4% !default; // space between columns
