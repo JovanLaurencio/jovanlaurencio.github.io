@@ -16,6 +16,9 @@ body {
   color: $font-color;
 }
 
+section:nth-child(-n+4) {
+	margin-bottom: 40px;
+}
 
 // Links
 //––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -23,6 +26,7 @@ a {
   color: $dkgrn;
 	transition: 0.3s ease-in-out;
   &:hover {
+		cursor: pointer;
     color: $ltgrn;
   }
 }
@@ -46,4 +50,25 @@ hr {
 
 ul li {
 	list-style-type: disc;
+}
+
+.case-studies img,
+.about .one-half img {
+	width: 100%;
+}
+
+#footer {
+	font-family: $font-header-family;
+	font-size: 1.2rem;
+	p:first-of-type {
+	  margin-top: .5rem;
+	  margin-bottom: 0;
+		span {
+			color: $dkgrn;
+		}
+  }
+	p:last-of-type {
+	  margin-top: .5rem;
+	  margin-bottom: 1rem;
+  }
 }
