@@ -6,13 +6,12 @@
 
 html {
   font-size: 62.5%;
-	overflow: hidden; //prevent bounce at top
-  height: 100%; // and bottom of page 1 of 2
+	
 }
 
 body {
-	height: 100%; //prevent bounce at top
-  overflow: auto; // and bottom of page 2 of 2
+
+
   font-size: 1.3em; // currently ems cause chrome bug misinterpreting rems on body element
   line-height: 1.6;
   font-weight: 400;

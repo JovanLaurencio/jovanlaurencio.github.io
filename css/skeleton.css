@@ -198,13 +198,9 @@ th {
 * Sass Version by Seth Coelen https://github.com/whatsnewsaes
 */
 html {
-  font-size: 62.5%;
-  overflow: hidden;
-  height: 100%; }
+  font-size: 62.5%; }
 
 body {
-  height: 100%;
-  overflow: auto;
   font-size: 1.3em;
   line-height: 1.6;
   font-weight: 400;
