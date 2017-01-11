@@ -34,6 +34,11 @@
   .logo .left {
     margin-right: 6.5px;
   }
+	#skills-btn a {
+	width: 60px;
+	height: 50px;
+	right: 16px;
+  }
 }
 
 // Larger than phablet (also point when grid becomes active)
@@ -76,6 +81,11 @@
   }
   .logo .left {
     margin-right: 12px;
+  }
+	#skills-btn a {
+	  width: 100px;
+	  height: 68px;
+		right: 10px;
   }
 }
 

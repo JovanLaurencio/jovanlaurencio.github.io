@@ -205,6 +205,7 @@ nav {
 		max-width: 200px;
 		list-style: none;
 		font-family: $font-header-family;
+		margin-bottom: 0;
 		&:first-of-type {
 			float: left;
 			li {
@@ -245,4 +246,21 @@ nav {
 			}
 		}
 	}
+}
+#skills-btn a {
+	font-family: $font-header-family;
+	background-color: $brtgrn;
+	position: fixed;
+	border-radius: 3px;
+	text-align: center;
+	text-decoration: none;
+	padding-top: 10px;
+	top: 45%;
+	color: $dkrgrn;
+	transition: all 0.3s ease-in-out;
+	z-index: 999;
+	&:hover {
+    background-color: $dkgrn;
+		color:$brtgrn;
+		}
 }

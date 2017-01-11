@@ -660,7 +660,11 @@ form {
   .logo-desktop {
     display: none; }
   .logo .left {
-    margin-right: 6.5px; } }
+    margin-right: 6.5px; }
+  #skills-btn a {
+    width: 60px;
+    height: 50px;
+    right: 16px; } }
 
 @media (min-width: 750px) {
   body {
@@ -687,7 +691,11 @@ form {
     display: block;
     margin-top: 40px; }
   .logo .left {
-    margin-right: 12px; } }
+    margin-right: 12px; }
+  #skills-btn a {
+    width: 100px;
+    height: 68px;
+    right: 10px; } }
 
 @media (min-width: 1000px) {
   .nav {
@@ -864,7 +872,8 @@ nav {
     width: 45%;
     max-width: 200px;
     list-style: none;
-    font-family: "Droid Sans Mono", monospace; }
+    font-family: "Droid Sans Mono", monospace;
+    margin-bottom: 0; }
     #another-cs ul:first-of-type {
       float: left; }
       #another-cs ul:first-of-type li {
@@ -892,6 +901,22 @@ nav {
         opacity: 0.7; }
     #another-cs ul li a {
       text-decoration: underline; }
+
+#skills-btn a {
+  font-family: "Droid Sans Mono", monospace;
+  background-color: #CBEBD9;
+  position: fixed;
+  border-radius: 3px;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 10px;
+  top: 45%;
+  color: #1D4C31;
+  transition: all 0.3s ease-in-out;
+  z-index: 999; }
+  #skills-btn a:hover {
+    background-color: #39935E;
+    color: #CBEBD9; }
 
 /* Mixins */
 nav {
