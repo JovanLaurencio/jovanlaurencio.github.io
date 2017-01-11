@@ -207,8 +207,13 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #222; }
 
-section:nth-child(-n+4) {
+section {
   margin-bottom: 40px; }
+  section:last-of-type {
+    margin-bottom: 0; }
+
+h2 {
+  color: #39935E; }
 
 a {
   color: #39935E;
@@ -638,6 +643,8 @@ form {
   margin-bottom: 2.5rem; }
 
 @media (min-width: 400px) {
+  .headline > img {
+    margin: 5px 5px 0 0; }
   .container {
     padding-top: 64px; }
   /* nav */
@@ -645,6 +652,8 @@ form {
     height: 64px; }
   :before {
     padding-top: 20px; }
+  .nav-name {
+    display: none; }
   .logo-mobile {
     margin-top: 30px; }
   .logo-tablet,
@@ -654,12 +663,24 @@ form {
     margin-right: 6.5px; } }
 
 @media (min-width: 750px) {
+  body {
+    font-size: 1.6em;
+    line-height: 1.8em; }
+  h1 {
+    line-height: 1.5em; }
+  .headline > img {
+    margin-top: 15px; }
   .container {
     padding-top: 50px; }
   nav {
     height: 50px; }
   :before {
     padding-top: 15px; }
+  .nav-name {
+    display: inline-block;
+    font-family: montserrat;
+    color: #39935E;
+    margin-left: 5px; }
   .logo-mobile {
     display: none; }
   .logo-tablet {
@@ -724,8 +745,7 @@ html {
 
 .headline > img {
   float: left;
-  vertical-align: middle;
-  margin: 5px 5px 0 0; }
+  vertical-align: middle; }
 
 /* nav */
 #nav {
@@ -741,7 +761,9 @@ nav {
   nav .nav {
     width: 77%;
     float: right;
-    max-width: 400px; }
+    max-width: 400px;
+    font-size: 1.3rem;
+    line-height: 1.3rem; }
     nav .nav ul {
       list-style: none; }
       nav .nav ul li {
@@ -771,6 +793,105 @@ nav {
   width: 100%; }
   .case-study img {
     width: 100%; }
+  .case-study a {
+    text-decoration: none; }
+
+/* case study template */
+.cs-template section:first-of-type {
+  margin-top: 25px; }
+
+.cs-template section h1 {
+  text-align: center; }
+
+.cs-template section div img {
+  width: 100%;
+  margin-bottom: 30px; }
+
+.cs-template section > div:last-of-type img {
+  margin-bottom: 0; }
+
+.cs-nav {
+  font-family: "Droid Sans Mono", monospace; }
+  .cs-nav li {
+    float: left;
+    text-align: center;
+    background-color: #CBEBD9;
+    padding: 10px;
+    list-style-type: none;
+    margin-right: 12px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease-in-out; }
+    .cs-nav li:hover {
+      background-color: #39935E;
+      cursor: pointer; }
+    .cs-nav li a {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+      color: #1D4C31;
+      transition: color 0.2s ease-in-out; }
+    .cs-nav li:hover a {
+      color: #CBEBD9; }
+
+/* ordered list number styles */
+#reflection ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+#reflection li {
+  counter-increment: step-counter;
+  margin-bottom: 10px; }
+
+#reflection li::before {
+  font-family: "Droid Sans Mono", monospace;
+  content: counter(step-counter);
+  margin-right: 5px;
+  background-color: #4CBA7A;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 3px; }
+
+/* case study template navigation */
+#another-cs {
+  text-align: center; }
+  #another-cs .prev-nex {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto; }
+  #another-cs ul {
+    width: 45%;
+    max-width: 200px;
+    list-style: none;
+    font-family: "Droid Sans Mono", monospace; }
+    #another-cs ul:first-of-type {
+      float: left; }
+      #another-cs ul:first-of-type li {
+        width: 50%;
+        display: inline-block;
+        text-align: center; }
+        #another-cs ul:first-of-type li:first-child {
+          height: 100px;
+          vertical-align: middle; }
+    #another-cs ul:last-of-type {
+      float: right; }
+      #another-cs ul:last-of-type li {
+        width: 50%;
+        display: inline-block;
+        text-align: center; }
+        #another-cs ul:last-of-type li:nth-child(2) {
+          height: 100px;
+          vertical-align: middle; }
+        #another-cs ul:last-of-type li:nth-child(2) a {
+          padding: 0 4%; }
+    #another-cs ul li img {
+      opacity: 1;
+      transition: opacity 0.3s; }
+      #another-cs ul li img:hover {
+        opacity: 0.7; }
+    #another-cs ul li a {
+      text-decoration: underline; }
 
 /* Mixins */
 nav {

@@ -8,8 +8,11 @@
 
 // Larger than mobile
 @media (#{$bp-larger-than-mobile}) {
-  .container {
-	padding-top: 64px;
+  .headline > img {
+ 	  margin: 5px 5px 0 0;
+  }
+	.container {
+	  padding-top: 64px;
   }
 	/* nav */
   nav {
@@ -18,6 +21,9 @@
 	  &:before {
       padding-top: 20px;
     }
+	.nav-name {
+		display:none;
+	}
   .logo-mobile {
     margin-top: 30px;
   }
@@ -36,7 +42,17 @@
 
 // Larger than tablet
 @media (#{$bp-larger-than-tablet}) {
-  .container {
+	body {
+		font-size: 1.6em;
+		line-height: 1.8em;
+	}
+	h1 {
+		line-height: 1.5em;
+	}
+	.headline > img {
+    margin-top: 15px;
+	}
+	.container {
 	padding-top: 50px;
   }
 	nav {
@@ -45,6 +61,12 @@
 		&:before {
 			padding-top: 15px;
 		}
+	.nav-name {
+		display: inline-block;
+		font-family: montserrat;
+    color: $dkgrn;
+    margin-left: 5px;
+	}
   .logo-mobile {
 	display:none;
   }

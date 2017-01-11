@@ -49,7 +49,6 @@ html {
 .headline > img {
  	float: left;
  	vertical-align: middle;
- 	margin: 5px 5px 0 0;
 }
 
 /* nav */
@@ -69,6 +68,8 @@ nav {
 	  width: 77%;
 	  float: right;
 		max-width: 400px;
+		font-size: 1.3rem;
+		line-height: 1.3rem;
       ul {
 	    list-style: none;
         li {
@@ -86,7 +87,7 @@ nav {
 		      margin-left: 5px;
 		    }
       }    
-	}
+	  }
 }
 
 /* Contact nav */
@@ -111,5 +112,137 @@ nav {
 	width: 100%;
 	img {
 		width: 100%;
+	}
+	a {
+		text-decoration: none;
+	}
+}
+
+/* case study template */
+.cs-template { 
+	section {
+		&:first-of-type {
+		  margin-top: 25px;
+	  }
+		h1 {
+			text-align: center;
+		}
+		div {
+	    img {
+				width: 100%;
+			  margin-bottom: 30px;
+			}
+		}
+		>div {
+			&:last-of-type img {
+				margin-bottom: 0;
+			}
+		}
+  }
+}
+
+.cs-nav {
+		font-family: $font-header-family;
+	  li {
+			float: left;
+			text-align: center;
+			background-color: $brtgrn;
+			padding: 10px;
+			list-style-type: none;
+			margin-right: 12px;
+			border-radius: 3px;
+			transition: background-color 0.3s ease-in-out;
+			&:hover {
+				background-color: $dkgrn;
+				cursor: pointer;
+			}
+			a {
+				display:inline-block;
+        width:100%;
+        height:100%;
+				text-decoration: none;
+				color: $dkrgrn;
+				transition: color 0.2s ease-in-out;
+			}
+			&:hover a {
+				color: $brtgrn;
+			}
+	  }
+}
+
+/* ordered list number styles */
+#reflection ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#reflection li {
+  counter-increment: step-counter;
+  margin-bottom: 10px;
+}
+
+#reflection li::before {
+	font-family: $font-header-family;
+  content: counter(step-counter);
+  margin-right: 5px;
+  background-color: $prmgrn;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 3px;
+}
+
+/* case study template navigation */
+#another-cs {
+	text-align: center;
+	.prev-nex {
+	  width: 100%;
+		max-width: 500px;
+		margin: 0 auto;
+	}
+  ul {
+		width: 45%;
+		max-width: 200px;
+		list-style: none;
+		font-family: $font-header-family;
+		&:first-of-type {
+			float: left;
+			li {
+		  	width: 50%;
+				display: inline-block;
+			  text-align: center;
+				&:first-child {
+				  height: 100px;
+				  vertical-align: middle;
+			  }
+		  }
+		}
+		&:last-of-type {
+			float: right;
+			li {
+			  width: 50%;
+				display: inline-block;
+			  text-align: center;
+				&:nth-child(2) {
+				  height: 100px;
+				  vertical-align: middle;
+			  }
+				&:nth-child(2) a {
+				  padding: 0 4%;
+			  }
+		  }
+		}
+		li {
+			img {
+				opacity: 1;
+				transition: opacity 0.3s;
+				&:hover {
+					opacity: 0.7;
+				}
+			}
+			a {
+				text-decoration: underline;
+			}
+		}
 	}
 }

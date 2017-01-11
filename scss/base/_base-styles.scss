@@ -19,8 +19,15 @@ body {
   color: $font-color;
 }
 
-section:nth-child(-n+4) {
+section {
 	margin-bottom: 40px;
+	&:last-of-type {
+	  margin-bottom: 0;
+  }
+}
+
+h2 {
+	color: $dkgrn;
 }
 
 // Links
