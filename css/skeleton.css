@@ -253,6 +253,7 @@ ul li {
 
 .u-max-full-width {
   max-width: 100%;
+  height: auto;
   box-sizing: border-box; }
 
 .u-pull-right {
@@ -266,6 +267,9 @@ ul li {
   right: 0;
   left: 0;
   z-index: 999; }
+
+.align-left {
+  text-align: left; }
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
@@ -669,7 +673,7 @@ form {
 @media (min-width: 750px) {
   body {
     font-size: 1.6em;
-    line-height: 1.8em; }
+    line-height: 2.1em; }
   h1 {
     line-height: 1.5em; }
   .headline > img {
@@ -812,11 +816,7 @@ nav {
   text-align: center; }
 
 .cs-template section div img {
-  width: 100%;
   margin-bottom: 30px; }
-
-.cs-template section > div:last-of-type img {
-  margin-bottom: 0; }
 
 .cs-nav {
   font-family: "Droid Sans Mono", monospace; }
@@ -895,6 +895,7 @@ nav {
         #another-cs ul:last-of-type li:nth-child(2) a {
           padding: 0 4%; }
     #another-cs ul li img {
+      margin-bottom: 0;
       opacity: 1;
       transition: opacity 0.3s; }
       #another-cs ul li img:hover {

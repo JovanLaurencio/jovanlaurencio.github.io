@@ -129,13 +129,7 @@ nav {
 		}
 		div {
 	    img {
-				width: 100%;
 			  margin-bottom: 30px;
-			}
-		}
-		>div {
-			&:last-of-type img {
-				margin-bottom: 0;
 			}
 		}
   }
@@ -235,6 +229,7 @@ nav {
 		}
 		li {
 			img {
+				margin-bottom: 0;
 				opacity: 1;
 				transition: opacity 0.3s;
 				&:hover {

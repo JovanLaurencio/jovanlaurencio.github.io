@@ -8,6 +8,7 @@
 
 .u-max-full-width {
   max-width: 100%;
+	height: auto;
   box-sizing: border-box;
 }
 
@@ -24,4 +25,8 @@
   right: 0;
   left: 0;
   z-index: 999;
+}
+
+.align-left {
+	text-align: left;
 }
