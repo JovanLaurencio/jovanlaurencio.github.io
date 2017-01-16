@@ -149,9 +149,6 @@ nav {
 				background-color: $dkgrn;
 				cursor: pointer;
 			}
-			&:active {
-				background-color: $brtgrn;
-			}
 			a {
 				display:inline-block;
         width:100%;
@@ -163,10 +160,15 @@ nav {
 			&:hover a {
 				color: $brtgrn;
 			}
-			&:active a {
-				color: $dkgrn;
-			}
 	  }
+}
+
+html.can-touch .cs-nav li:hover{ /* disable hover effect when input is touch */
+	background-color: $brtgrn;
+}
+
+html.can-touch .cs-nav li a:hover{ /* disable hover effect when input is touch */
+	color: $dkgrn;
 }
 
 /* ordered list number styles */
@@ -265,10 +267,10 @@ nav {
     background-color: $dkgrn;
 	  color:$brtgrn;
 	}
-	&:active {
-		background-color: $brtgrn !important;
-	  color:$dkgrn !important;
-	}
+}
+html.can-touch .cs-nav a:hover{ /* disable hover effect when input is touch */
+	background-color: $brtgrn;
+	color: $dkgrn;
 }
 
 .content-list li {
