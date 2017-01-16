@@ -966,7 +966,7 @@ html.can-touch .cs-nav li a:hover {
     background-color: #39935E;
     color: #CBEBD9; }
 
-html.can-touch .cs-nav a:hover {
+html.can-touch #skills-btn a:hover {
   /* disable hover effect when input is touch */
   background-color: #CBEBD9;
   color: #39935E; }

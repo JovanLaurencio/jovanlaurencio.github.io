@@ -251,6 +251,7 @@ html.can-touch .cs-nav li a:hover{ /* disable hover effect when input is touch *
 		}
 	}
 }
+
 #skills-btn a {
 	font-family: $font-header-family;
 	background-color: $brtgrn;
@@ -268,7 +269,7 @@ html.can-touch .cs-nav li a:hover{ /* disable hover effect when input is touch *
 	  color:$brtgrn;
 	}
 }
-html.can-touch .cs-nav a:hover{ /* disable hover effect when input is touch */
+html.can-touch #skills-btn a:hover{ /* disable hover effect when input is touch */
 	background-color: $brtgrn;
 	color: $dkgrn;
 }
