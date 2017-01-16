@@ -17,14 +17,6 @@ html {
  	text-align: center;
 }
 
-video {
-	width: 100%;
-	height: auto;
-}
-video::-webkit-media-controls-enclosure {
-	display: none;
-}
-
 .logo-mobile h1,
 .logo-tablet h1,
 .logo-desktop h1 {
@@ -116,7 +108,6 @@ nav {
 
 /* case study */
 .case-study {
-	margin-bottom: 30px;
 	width: 100%;
 	img {
 		width: 100%;
@@ -187,10 +178,12 @@ nav {
 #reflection li::before {
 	font-family: $font-header-family;
   content: counter(step-counter);
-  margin-right: 5px;
+  position: absolute;
+	display: inline-block;
+	box-sizing: border-box;
+	text-align: center;
   background-color: $prmgrn;
   color: white;
-  padding: 2px 8px;
   border-radius: 3px;
 }
 
@@ -266,4 +259,21 @@ nav {
     background-color: $dkgrn;
 		color:$brtgrn;
 		}
+}
+
+.content-list li {
+    margin-left: 30px;
+}
+
+.content-list > li::before {
+    padding-right: 15px;
+    content: "•";
+}
+.content-list li:before {
+    position: absolute;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 78px;
+    margin-left: -78px;
+    text-align: right;
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 * Skeleton V2.0.4
 * Copyright 2014, Dave Gamache
@@ -215,6 +216,14 @@ section {
 h2 {
   color: #39935E; }
 
+video {
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px; }
+
+video::-webkit-media-controls-enclosure {
+  display: none; }
+
 a {
   color: #39935E;
   transition: 0.3s ease-in-out; }
@@ -229,11 +238,8 @@ hr {
   border-top: 1px solid #4CBA7A; }
 
 ul li {
-  list-style-type: disc; }
-
-.case-studies img,
-.about .one-half img {
-  width: 100%; }
+  list-style-type: none;
+  line-height: 1.3em; }
 
 #footer {
   font-family: "Droid Sans Mono", monospace;
@@ -665,10 +671,27 @@ form {
     display: none; }
   .logo .left {
     margin-right: 6.5px; }
+  .case-study {
+    margin-bottom: 50px; }
+    .case-study:last-of-type {
+      margin-bottom: 0; }
   #skills-btn a {
     width: 60px;
     height: 50px;
-    right: 16px; } }
+    right: 16px; }
+  #reflection li {
+    margin-left: 40px; }
+  #reflection li::before {
+    width: 30px;
+    margin-left: -40px;
+    margin-top: 4px;
+    padding: 4px 10px; }
+  .content-list li {
+    line-height: 1.8em; }
+  .content-list > li:before {
+    font-size: 1.3em; }
+  .content-list > li::before {
+    padding-top: 1px; } }
 
 @media (min-width: 750px) {
   body {
@@ -678,6 +701,8 @@ form {
     line-height: 1.5em; }
   .headline > img {
     margin-top: 15px; }
+  ul li {
+    line-height: 1.6em; }
   .container {
     padding-top: 50px; }
   nav {
@@ -696,10 +721,23 @@ form {
     margin-top: 40px; }
   .logo .left {
     margin-right: 12px; }
+  .case-study {
+    margin-bottom: 80px; }
   #skills-btn a {
     width: 100px;
     height: 68px;
-    right: 10px; } }
+    right: 10px; }
+  #reflection li {
+    margin-left: 50px; }
+  #reflection li::before {
+    width: 32px;
+    margin-top: 8px;
+    padding: 0 10px;
+    margin-left: -50px; }
+  .content-list > li:before {
+    font-size: 1.6em; }
+  .content-list > li::before {
+    padding-top: 0; } }
 
 @media (min-width: 1000px) {
   .nav {
@@ -727,13 +765,6 @@ html {
 
 .logo {
   text-align: center; }
-
-video {
-  width: 100%;
-  height: auto; }
-
-video::-webkit-media-controls-enclosure {
-  display: none; }
 
 .logo-mobile h1,
 .logo-tablet h1,
@@ -808,7 +839,6 @@ nav {
 
 /* case study */
 .case-study {
-  margin-bottom: 30px;
   width: 100%; }
   .case-study img {
     width: 100%; }
@@ -862,10 +892,12 @@ nav {
 #reflection li::before {
   font-family: "Droid Sans Mono", monospace;
   content: counter(step-counter);
-  margin-right: 5px;
+  position: absolute;
+  display: inline-block;
+  box-sizing: border-box;
+  text-align: center;
   background-color: #4CBA7A;
   color: white;
-  padding: 2px 8px;
   border-radius: 3px; }
 
 /* case study template navigation */
@@ -925,6 +957,21 @@ nav {
   #skills-btn a:hover {
     background-color: #39935E;
     color: #CBEBD9; }
+
+.content-list li {
+  margin-left: 30px; }
+
+.content-list > li::before {
+  padding-right: 15px;
+  content: "•"; }
+
+.content-list li:before {
+  position: absolute;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 78px;
+  margin-left: -78px;
+  text-align: right; }
 
 /* Mixins */
 nav {

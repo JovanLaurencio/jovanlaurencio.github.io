@@ -30,6 +30,15 @@ h2 {
 	color: $dkgrn;
 }
 
+video {
+	width: 100%;
+	height: auto;
+	    margin-bottom: 30px;
+}
+video::-webkit-media-controls-enclosure {
+	display: none;
+}
+
 // Links
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 a {
@@ -59,12 +68,8 @@ hr {
 }
 
 ul li {
-	list-style-type: disc;
-}
-
-.case-studies img,
-.about .one-half img {
-	width: 100%;
+	list-style-type: none;
+	line-height: 1.3em;
 }
 
 #footer {

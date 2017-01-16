@@ -34,10 +34,35 @@
   .logo .left {
     margin-right: 6.5px;
   }
+	.case-study {
+	  margin-bottom: 50px;
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
 	#skills-btn a {
-	width: 60px;
-	height: 50px;
-	right: 16px;
+	  width: 60px;
+	  height: 50px;
+	  right: 16px;
+  }
+	#reflection li {
+		margin-left: 40px;
+	}
+
+	#reflection li::before {
+		width: 30px;
+		margin-left: -40px;
+		margin-top: 4px;
+		padding: 4px 10px;
+	}
+	.content-list li {
+		line-height: 1.8em;
+	}
+	.content-list > li:before {
+    font-size: 1.3em;
+  }
+	.content-list > li::before {
+    padding-top: 1px;
   }
 }
 
@@ -57,6 +82,9 @@
 	.headline > img {
     margin-top: 15px;
 	}
+	ul li {
+	  line-height: 1.6em;
+  }
 	.container {
 	padding-top: 50px;
   }
@@ -82,10 +110,29 @@
   .logo .left {
     margin-right: 12px;
   }
+	.case-study {
+	  margin-bottom: 80px;
+	}
 	#skills-btn a {
 	  width: 100px;
 	  height: 68px;
 		right: 10px;
+  }
+	#reflection li {
+		margin-left: 50px;
+	}
+
+	#reflection li::before {
+		width: 32px;
+		margin-top: 8px;
+		padding: 0 10px;
+		margin-left: -50px;
+	}
+	.content-list > li:before {
+    font-size: 1.6em;
+  }
+	.content-list > li::before {
+    padding-top: 0;
   }
 }
 
