@@ -163,8 +163,8 @@ nav {
 			&:hover a {
 				color: $brtgrn;
 			}
-			&:active {
-				background-color: $dkgrn;
+			&:active a {
+				color: $dkgrn;
 			}
 	  }
 }
@@ -263,8 +263,12 @@ nav {
 	z-index: 999;
 	&:hover {
     background-color: $dkgrn;
-		color:$brtgrn;
-		}
+	  color:$brtgrn;
+	}
+	&:active {
+		background-color: $brtgrn;
+	  color:$dkgrn;
+	}
 }
 
 .content-list li {

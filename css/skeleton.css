@@ -880,8 +880,8 @@ nav {
       transition: color 0.2s ease-in-out; }
     .cs-nav li:hover a {
       color: #CBEBD9; }
-    .cs-nav li:active {
-      background-color: #39935E; }
+    .cs-nav li:active a {
+      color: #39935E; }
 
 /* ordered list number styles */
 #reflection ol {
@@ -961,6 +961,9 @@ nav {
   #skills-btn a:hover {
     background-color: #39935E;
     color: #CBEBD9; }
+  #skills-btn a:active {
+    background-color: #CBEBD9;
+    color: #39935E; }
 
 .content-list li {
   margin-left: 30px; }
