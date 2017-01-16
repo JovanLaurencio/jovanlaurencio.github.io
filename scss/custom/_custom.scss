@@ -266,8 +266,8 @@ nav {
 	  color:$brtgrn;
 	}
 	&:active {
-		background-color: $brtgrn;
-	  color:$dkgrn;
+		background-color: $brtgrn !important;
+	  color:$dkgrn !important;
 	}
 }
 

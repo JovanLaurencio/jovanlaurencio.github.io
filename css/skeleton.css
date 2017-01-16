@@ -962,8 +962,8 @@ nav {
     background-color: #39935E;
     color: #CBEBD9; }
   #skills-btn a:active {
-    background-color: #CBEBD9;
-    color: #39935E; }
+    background-color: #CBEBD9 !important;
+    color: #39935E !important; }
 
 .content-list li {
   margin-left: 30px; }
