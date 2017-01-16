@@ -149,6 +149,9 @@ nav {
 				background-color: $dkgrn;
 				cursor: pointer;
 			}
+			&:active {
+				background-color: $brtgrn;
+			}
 			a {
 				display:inline-block;
         width:100%;
@@ -159,6 +162,9 @@ nav {
 			}
 			&:hover a {
 				color: $brtgrn;
+			}
+			&:active {
+				background-color: $dkgrn;
 			}
 	  }
 }

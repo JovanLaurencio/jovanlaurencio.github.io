@@ -869,6 +869,8 @@ nav {
     .cs-nav li:hover {
       background-color: #39935E;
       cursor: pointer; }
+    .cs-nav li:active {
+      background-color: #CBEBD9; }
     .cs-nav li a {
       display: inline-block;
       width: 100%;
@@ -878,6 +880,8 @@ nav {
       transition: color 0.2s ease-in-out; }
     .cs-nav li:hover a {
       color: #CBEBD9; }
+    .cs-nav li:active {
+      background-color: #39935E; }
 
 /* ordered list number styles */
 #reflection ol {
