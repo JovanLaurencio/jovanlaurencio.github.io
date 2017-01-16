@@ -50,12 +50,9 @@ a {
   }
 }
 
-//nav a {
-//  color: $dkgrn;
-//  &:hover {
-//    color: $ltgrn;
-//  }
-//}
+html.can-touch a:hover{ /* disable hover effect when input is touch */
+	color: $dkgrn;
+}
 
 // Misc
 //––––––––––––––––––––––––––––––––––––––––––––––––––

@@ -231,6 +231,10 @@ a {
     cursor: pointer;
     color: #76ca9a; }
 
+html.can-touch a:hover {
+  /* disable hover effect when input is touch */
+  color: #39935E; }
+
 hr {
   margin-top: 3rem;
   margin-bottom: 3.5rem;
