@@ -14,6 +14,18 @@
 	.container {
 	  padding-top: 64px;
   }
+	
+	/* anchor links */
+	#case-studies:before,
+	#about:before,
+	#contact:before,
+	#hero:before {
+		content:"";
+		display:block;
+		height:64px; /* fixed header height*/
+		margin:-64px 0 0; /* negative fixed header height */
+	}
+
 	/* nav */
   nav {
 	 height: 64px;
@@ -88,6 +100,19 @@
 	.container {
 	padding-top: 50px;
   }
+	
+	/* anchor links */
+	#case-studies:before,
+	#about:before,
+	#contact:before,
+	#hero:before {
+		content:"";
+		display:block;
+		height:50px; /* fixed header height*/
+		margin:-50px 0 0; /* negative fixed header height */
+	}
+
+	/* nav */
 	nav {
 	 height: 50px;
   }
