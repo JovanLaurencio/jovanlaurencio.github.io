@@ -664,17 +664,6 @@ form {
     margin: 5px 5px 0 0; }
   .container {
     padding-top: 64px; }
-  /* anchor links */
-  #case-studies:before,
-  #about:before,
-  #contact:before,
-  #hero:before {
-    content: "";
-    display: block;
-    height: 64px;
-    /* fixed header height*/
-    margin: -64px 0 0;
-    /* negative fixed header height */ }
   /* nav */
   nav {
     height: 64px; }
@@ -709,7 +698,15 @@ form {
   .content-list > li:before {
     font-size: 1.3em; }
   .content-list > li::before {
-    padding-top: 1px; } }
+    padding-top: 1px; }
+  /* anchor links */
+  #hero:before {
+    content: "";
+    display: block;
+    height: 64px;
+    /* fixed header height*/
+    margin: -64px 0 0;
+    /* negative fixed header height */ } }
 
 @media (min-width: 750px) {
   body {
@@ -723,17 +720,6 @@ form {
     line-height: 1.6em; }
   .container {
     padding-top: 50px; }
-  /* anchor links */
-  #case-studies:before,
-  #about:before,
-  #contact:before,
-  #hero:before {
-    content: "";
-    display: block;
-    height: 50px;
-    /* fixed header height*/
-    margin: -50px 0 0;
-    /* negative fixed header height */ }
   /* nav */
   nav {
     height: 50px; }
@@ -744,6 +730,14 @@ form {
     font-family: montserrat;
     color: #39935E;
     margin-left: 5px; }
+  /* anchor links */
+  #hero:before {
+    content: "";
+    display: block;
+    height: 50px;
+    /* fixed header height*/
+    margin: 50x 0 0;
+    /* negative fixed header height */ }
   .logo-mobile {
     display: none; }
   .logo-tablet {
@@ -866,6 +860,17 @@ nav {
     margin-right: 25px; }
     .contact ul li:nth-child(n+2)a {
       padding: 5px 10px; }
+
+/* anchor links */
+#case-studies:before,
+#about:before,
+#contact:before {
+  content: "";
+  display: block;
+  height: 1px;
+  /* fixed header height*/
+  margin: -1px 0 0;
+  /* negative fixed header height */ }
 
 /* case study */
 .case-study {

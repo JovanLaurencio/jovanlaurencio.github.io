@@ -104,7 +104,15 @@ nav {
 	}
 }
 
-
+/* anchor links */
+#case-studies:before,
+#about:before,
+#contact:before {
+	content:"";
+	display:block;
+	height:1px; /* fixed header height*/
+	margin:-1px 0 0; /* negative fixed header height */
+}
 
 /* case study */
 .case-study {

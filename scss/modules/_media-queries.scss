@@ -14,17 +14,6 @@
 	.container {
 	  padding-top: 64px;
   }
-	
-	/* anchor links */
-	#case-studies:before,
-	#about:before,
-	#contact:before,
-	#hero:before {
-		content:"";
-		display:block;
-		height:64px; /* fixed header height*/
-		margin:-64px 0 0; /* negative fixed header height */
-	}
 
 	/* nav */
   nav {
@@ -76,6 +65,14 @@
 	.content-list > li::before {
     padding-top: 1px;
   }
+	
+	/* anchor links */
+	#hero:before {
+		content:"";
+		display:block;
+		height:64px; /* fixed header height*/
+		margin:-64px 0 0; /* negative fixed header height */
+	}
 }
 
 // Larger than phablet (also point when grid becomes active)
@@ -101,17 +98,6 @@
 	padding-top: 50px;
   }
 	
-	/* anchor links */
-	#case-studies:before,
-	#about:before,
-	#contact:before,
-	#hero:before {
-		content:"";
-		display:block;
-		height:50px; /* fixed header height*/
-		margin:-50px 0 0; /* negative fixed header height */
-	}
-
 	/* nav */
 	nav {
 	 height: 50px;
@@ -125,6 +111,15 @@
     color: $dkgrn;
     margin-left: 5px;
 	}
+	
+	/* anchor links */
+	#hero:before {
+		content:"";
+		display:block;
+		height:50px; /* fixed header height*/
+		margin:50x 0 0; /* negative fixed header height */
+	}
+	
   .logo-mobile {
 	display:none;
   }
