@@ -69,7 +69,8 @@
 	/* anchor links */
 	#case-studies:target:before,
 	#about:target:before,
-	#hero:target:before {
+	#hero:target:before,
+	#cs-nav:target:before {
 		content:"";
 		display:block;
 		height:64px; /* fixed header height*/
@@ -117,7 +118,8 @@
 	/* anchor links */
 	#case-studies:target:before,
 	#about:target:before,
-	#hero:target:before {
+	#hero:target:before,
+	#cs-nav:target:before {
 		content:"";
 		display:block;
 		height:50px; /* fixed header height*/

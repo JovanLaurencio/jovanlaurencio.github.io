@@ -702,7 +702,8 @@ form {
   /* anchor links */
   #case-studies:target:before,
   #about:target:before,
-  #hero:target:before {
+  #hero:target:before,
+  #cs-nav:target:before {
     content: "";
     display: block;
     height: 64px;
@@ -735,7 +736,8 @@ form {
   /* anchor links */
   #case-studies:target:before,
   #about:target:before,
-  #hero:target:before {
+  #hero:target:before,
+  #cs-nav:target:before {
     content: "";
     display: block;
     height: 50px;
