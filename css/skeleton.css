@@ -700,7 +700,9 @@ form {
   .content-list > li::before {
     padding-top: 1px; }
   /* anchor links */
-  #hero:before {
+  #case-studies:target:before,
+  #about:target:before,
+  #hero:target:before {
     content: "";
     display: block;
     height: 64px;
@@ -731,7 +733,9 @@ form {
     color: #39935E;
     margin-left: 5px; }
   /* anchor links */
-  #hero:before {
+  #case-studies:target:before,
+  #about:target:before,
+  #hero:target:before {
     content: "";
     display: block;
     height: 50px;

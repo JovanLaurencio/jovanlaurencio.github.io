@@ -67,7 +67,9 @@
   }
 	
 	/* anchor links */
-	#hero:before {
+	#case-studies:target:before,
+	#about:target:before,
+	#hero:target:before {
 		content:"";
 		display:block;
 		height:64px; /* fixed header height*/
@@ -113,7 +115,9 @@
 	}
 	
 	/* anchor links */
-	#hero:before {
+	#case-studies:target:before,
+	#about:target:before,
+	#hero:target:before {
 		content:"";
 		display:block;
 		height:50px; /* fixed header height*/
