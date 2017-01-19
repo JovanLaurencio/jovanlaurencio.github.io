@@ -67,15 +67,15 @@
   }
 	
 	/* anchor links */
-	#case-studies:target:before,
-	#about:target:before,
-	#hero:target:before,
-	#cs-nav:target:before {
-		content:"";
-		display:block;
-		height:64px; /* fixed header height*/
-		margin:-64px 0 0; /* negative fixed header height */
-	}
+//	#case-studies:target:before,
+//	#about:target:before,
+//	#hero:target:before,
+//	#cs-nav:target:before {
+//		content:"";
+//		display:block;
+//		height:64px; /* fixed header height*/
+//		margin:-64px 0 0; /* negative fixed header height */
+//	}
 }
 
 // Larger than phablet (also point when grid becomes active)
@@ -116,15 +116,15 @@
 	}
 	
 	/* anchor links */
-	#case-studies:target:before,
-	#about:target:before,
-	#hero:target:before,
-	#cs-nav:target:before {
-		content:"";
-		display:block;
-		height:50px; /* fixed header height*/
-		margin:50px 0 0; /* negative fixed header height */
-	}
+//	#case-studies:target:before,
+//	#about:target:before,
+//	#hero:target:before,
+//	#cs-nav:target:before {
+//		content:"";
+//		display:block;
+//		height:50px; /* fixed header height*/
+//		margin:50px 0 0; /* negative fixed header height */
+//	}
 	
   .logo-mobile {
 	display:none;

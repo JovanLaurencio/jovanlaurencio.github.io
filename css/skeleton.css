@@ -699,17 +699,7 @@ form {
     font-size: 1.3em; }
   .content-list > li::before {
     padding-top: 1px; }
-  /* anchor links */
-  #case-studies:target:before,
-  #about:target:before,
-  #hero:target:before,
-  #cs-nav:target:before {
-    content: "";
-    display: block;
-    height: 64px;
-    /* fixed header height*/
-    margin: -64px 0 0;
-    /* negative fixed header height */ } }
+  /* anchor links */ }
 
 @media (min-width: 750px) {
   body {
@@ -734,16 +724,6 @@ form {
     color: #39935E;
     margin-left: 5px; }
   /* anchor links */
-  #case-studies:target:before,
-  #about:target:before,
-  #hero:target:before,
-  #cs-nav:target:before {
-    content: "";
-    display: block;
-    height: 50px;
-    /* fixed header height*/
-    margin: 50px 0 0;
-    /* negative fixed header height */ }
   .logo-mobile {
     display: none; }
   .logo-tablet {

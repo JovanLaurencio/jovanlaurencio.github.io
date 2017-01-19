@@ -18,14 +18,14 @@
 
 // set timeout onDomReady
 $(function() {
-    setTimeout(delayedFragmentTargetOffset, 500);
+    setTimeout(delayedFragmentTargetOffset, 150);
 });
 
 // add scroll offset to fragment target (if there is one)
 function delayedFragmentTargetOffset(){
     var offset = $(':target').offset();
     if(offset){
-        var scrollto = offset.top; // minus fixed header height
+        var scrollto = offset.top - 64; // minus fixed header height
         $('html, body').animate({scrollTop:scrollto}, 0);
     }
 }
