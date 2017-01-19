@@ -260,21 +260,24 @@ html.can-touch .cs-nav li a:hover{ /* disable hover effect when input is touch *
 	}
 }
 
-#skills-btn a {
-	font-family: $font-header-family;
-	background-color: $brtgrn;
-	position: fixed;
-	border-radius: 3px;
-	text-align: center;
-	text-decoration: none;
-	padding-top: 10px;
-	top: 45%;
-	color: $dkrgrn;
-	transition: all 0.3s ease-in-out;
-	z-index: 999;
-	&:hover {
-    background-color: $dkgrn;
-	  color:$brtgrn;
+#skills-btn {
+	margin-bottom: 0;
+  a {
+		font-family: $font-header-family;
+		background-color: $brtgrn;
+		position: fixed;
+		border-radius: 3px;
+		text-align: center;
+		text-decoration: none;
+		padding-top: 10px;
+		top: 45%;
+		color: $dkrgrn;
+		transition: all 0.3s ease-in-out;
+		z-index: 999;
+		&:hover {
+			background-color: $dkgrn;
+			color:$brtgrn;
+		}
 	}
 }
 

@@ -742,7 +742,7 @@ form {
     display: block;
     height: 50px;
     /* fixed header height*/
-    margin: 50x 0 0;
+    margin: 50px 0 0;
     /* negative fixed header height */ }
   .logo-mobile {
     display: none; }
@@ -981,21 +981,23 @@ html.can-touch .cs-nav li a:hover {
     #another-cs ul li a {
       text-decoration: underline; }
 
-#skills-btn a {
-  font-family: "Droid Sans Mono", monospace;
-  background-color: #CBEBD9;
-  position: fixed;
-  border-radius: 3px;
-  text-align: center;
-  text-decoration: none;
-  padding-top: 10px;
-  top: 45%;
-  color: #1D4C31;
-  transition: all 0.3s ease-in-out;
-  z-index: 999; }
-  #skills-btn a:hover {
-    background-color: #39935E;
-    color: #CBEBD9; }
+#skills-btn {
+  margin-bottom: 0; }
+  #skills-btn a {
+    font-family: "Droid Sans Mono", monospace;
+    background-color: #CBEBD9;
+    position: fixed;
+    border-radius: 3px;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 10px;
+    top: 45%;
+    color: #1D4C31;
+    transition: all 0.3s ease-in-out;
+    z-index: 999; }
+    #skills-btn a:hover {
+      background-color: #39935E;
+      color: #CBEBD9; }
 
 html.can-touch #skills-btn a:hover {
   /* disable hover effect when input is touch */
