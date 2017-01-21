@@ -284,6 +284,9 @@ ul li {
 .align-center {
   text-align: center; }
 
+.align-right {
+  text-align: right; }
+
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 2rem;
@@ -699,7 +702,10 @@ form {
     font-size: 1.3em; }
   .content-list > li::before {
     padding-top: 1px; }
-  /* anchor links */ }
+  .cs-img-margin {
+    margin: 2em auto 2em; }
+  .cs-margin-top {
+    margin-top: 2em; } }
 
 @media (min-width: 750px) {
   body {
@@ -723,7 +729,6 @@ form {
     font-family: montserrat;
     color: #39935E;
     margin-left: 5px; }
-  /* anchor links */
   .logo-mobile {
     display: none; }
   .logo-tablet {
@@ -747,7 +752,11 @@ form {
   .content-list > li:before {
     font-size: 1.6em; }
   .content-list > li::before {
-    padding-top: 0; } }
+    padding-top: 0; }
+  .cs-img-margin {
+    margin: 3em auto 2em; }
+  .cs-margin-top {
+    margin-top: 3em; } }
 
 @media (min-width: 1000px) {
   .nav {
@@ -998,6 +1007,10 @@ html.can-touch #skills-btn a:hover {
   width: 78px;
   margin-left: -78px;
   text-align: right; }
+
+/* case study image container margins */
+.cs-margin-bottom {
+  margin-bottom: 3em; }
 
 /* Mixins */
 nav {

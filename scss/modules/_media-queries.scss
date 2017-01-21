@@ -65,17 +65,12 @@
 	.content-list > li::before {
     padding-top: 1px;
   }
-	
-	/* anchor links */
-//	#case-studies:target:before,
-//	#about:target:before,
-//	#hero:target:before,
-//	#cs-nav:target:before {
-//		content:"";
-//		display:block;
-//		height:64px; /* fixed header height*/
-//		margin:-64px 0 0; /* negative fixed header height */
-//	}
+	.cs-img-margin {
+		margin: 2em auto 2em;
+	}
+	.cs-margin-top {
+		margin-top: 2em;
+	}
 }
 
 // Larger than phablet (also point when grid becomes active)
@@ -114,24 +109,12 @@
     color: $dkgrn;
     margin-left: 5px;
 	}
-	
-	/* anchor links */
-//	#case-studies:target:before,
-//	#about:target:before,
-//	#hero:target:before,
-//	#cs-nav:target:before {
-//		content:"";
-//		display:block;
-//		height:50px; /* fixed header height*/
-//		margin:50px 0 0; /* negative fixed header height */
-//	}
-	
   .logo-mobile {
-	display:none;
+	  display:none;
   }
   .logo-tablet {
     display: block;
-	margin-top: 40px;
+	  margin-top: 40px;
   }
   .logo .left {
     margin-right: 12px;
@@ -160,6 +143,12 @@
 	.content-list > li::before {
     padding-top: 0;
   }
+	.cs-img-margin {
+		margin: 3em auto 2em;
+	}
+	.cs-margin-top {
+		margin-top: 3em;
+	}
 }
 
 // Larger than desktop
