@@ -705,7 +705,10 @@ form {
   .cs-img-margin {
     margin: 2em auto 2em; }
   .cs-margin-top {
-    margin-top: 2em; } }
+    margin-top: 2em; }
+  #footer ul {
+    margin-top: 1em;
+    font-size: 1.3em; } }
 
 @media (min-width: 750px) {
   body {
@@ -756,7 +759,10 @@ form {
   .cs-img-margin {
     margin: 3em auto 2em; }
   .cs-margin-top {
-    margin-top: 3em; } }
+    margin-top: 3em; }
+  #footer ul {
+    margin-top: 0;
+    text-align: right; } }
 
 @media (min-width: 1000px) {
   .nav {
@@ -846,17 +852,11 @@ nav {
       nav .nav ul a span {
         margin-left: 5px; }
 
-/* Contact nav */
-.contact ul {
-  list-style: none;
-  font-family: "Droid Sans Mono", monospace; }
-  .contact ul li {
-    display: inline-block;
-    margin-right: 25px; }
-    .contact ul li:nth-child(n+2)a {
-      padding: 5px 10px; }
+#contact h2 {
+  margin: 4rem auto; }
+  #contact h2 a {
+    text-decoration: none; }
 
-/* anchor links */
 /* case study */
 .case-study {
   width: 100%; }
@@ -1011,6 +1011,19 @@ html.can-touch #skills-btn a:hover {
 /* case study image container margins */
 .cs-margin-bottom {
   margin-bottom: 3em; }
+
+/* Footer links */
+#footer img {
+  margin-top: 1rem; }
+
+#footer ul {
+  list-style: none;
+  font-family: "Droid Sans Mono", monospace; }
+  #footer ul li {
+    display: inline-block;
+    margin-right: 25px; }
+    #footer ul li:nth-child(n+2)a {
+      padding: 5px 10px; }
 
 /* Mixins */
 nav {

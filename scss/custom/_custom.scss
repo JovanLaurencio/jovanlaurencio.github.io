@@ -90,29 +90,13 @@ nav {
 	  }
 }
 
-/* Contact nav */
+#contact h2 {
+  margin: 4rem auto;
+	a {
+	  text-decoration: none;
+  }
+}	
 
-.contact ul {
-	list-style: none;
-	font-family: $font-header-family;
-	li {
-		display: inline-block;
-		margin-right: 25px;
-		&:nth-child(n+2)a {
-		  padding: 5px 10px;
-	  }
-	}
-}
-
-/* anchor links */
-//#case-studies:before,
-//#about:before,
-//#contact:before {
-//	content:"";
-//	display:block;
-//	height:1px; /* fixed header height*/
-//	margin:-1px 0 0; /* negative fixed header height */
-//}
 
 /* case study */
 .case-study {
@@ -306,4 +290,23 @@ html.can-touch #skills-btn a:hover{ /* disable hover effect when input is touch 
 /* case study image container margins */
 .cs-margin-bottom {
 	margin-bottom: 3em;
+}
+
+/* Footer links */
+
+#footer {
+	img {
+		margin-top: 1rem;
+	}
+  ul {
+	list-style: none;
+	font-family: $font-header-family;
+		li {
+			display: inline-block;
+			margin-right: 25px;
+			&:nth-child(n+2)a {
+				padding: 5px 10px;
+			}
+		}
+  }
 }

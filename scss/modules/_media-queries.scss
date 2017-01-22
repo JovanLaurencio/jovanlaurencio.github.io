@@ -71,6 +71,10 @@
 	.cs-margin-top {
 		margin-top: 2em;
 	}
+	#footer ul {
+    margin-top: 1em;
+    font-size: 1.3em;
+  }
 }
 
 // Larger than phablet (also point when grid becomes active)
@@ -149,6 +153,10 @@
 	.cs-margin-top {
 		margin-top: 3em;
 	}
+	#footer ul {
+		margin-top: 0;
+    text-align: right;
+  }
 }
 
 // Larger than desktop
