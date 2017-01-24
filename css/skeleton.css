@@ -342,7 +342,7 @@ p {
   line-height: 30px;
   margin-bottom: 1.5rem; }
 
-@media (min-width: 375px) {
+@media (min-width: 400px) {
   .container {
     width: 95%;
     padding: 0; } }
@@ -674,6 +674,8 @@ form {
     padding-top: 20px; }
   .nav-name {
     display: none; }
+  nav .nav ul li.plus {
+    display: none; }
   .logo-mobile {
     margin-top: 30px; }
   .logo-tablet,
@@ -709,6 +711,14 @@ form {
   #footer ul {
     margin-top: 1em;
     font-size: 1.3em; } }
+
+@media (min-width: 400px) {
+  nav .nav ul li.nonplus {
+    display: none; }
+  nav .nav ul li.plus {
+    display: inline-block; }
+  nav .nav ul li:nth-child(3) a {
+    padding-left: 10px; } }
 
 @media (min-width: 750px) {
   body {
@@ -845,8 +855,6 @@ nav {
         display: inline-block;
         width: 33%;
         text-align: center; }
-      nav .nav ul li:nth-child(2) a {
-        padding-left: 10px; }
       nav .nav ul a img {
         vertical-align: sub; }
       nav .nav ul a span {

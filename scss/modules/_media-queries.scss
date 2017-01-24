@@ -7,7 +7,7 @@
 // there.
 
 // Larger than mobile
-@media (#{$bp-larger-than-mobile}) {
+@media (#{$bp-larger-than-nonplus-mobile}) {
   .headline > img {
  	  margin: 5px 5px 0 0;
   }
@@ -24,6 +24,9 @@
     }
 	.nav-name {
 		display:none;
+	}
+	nav .nav ul li.plus {
+		display: none;
 	}
   .logo-mobile {
     margin-top: 30px;
@@ -75,6 +78,19 @@
     margin-top: 1em;
     font-size: 1.3em;
   }
+}
+
+// Larger than mobile
+@media (#{$bp-larger-than-mobile}) {
+	nav .nav ul li.nonplus {
+		display: none;
+	}
+	nav .nav ul li.plus {
+		display: inline-block;
+	}
+	nav .nav ul li:nth-child(3) a {
+		padding-left: 10px;
+	}
 }
 
 // Larger than phablet (also point when grid becomes active)
