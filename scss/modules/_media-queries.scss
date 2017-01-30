@@ -14,7 +14,6 @@
 	.container {
 	  padding-top: 64px;
   }
-
 	/* nav */
   nav {
 	 height: 64px;
@@ -44,6 +43,19 @@
 			margin-bottom: 0;
 		}
 	}
+	.cs-img-margin,
+	.cs-margin-bottom {
+		.caption {
+			font-size: 0.93em;
+			color: #666;
+			font-weight: 300;
+			margin-top: -15px;
+		  text-align: center;
+			.img-caption {
+				display: none;
+			} 
+		}
+	}
 	#skills-btn a {
 	  width: 60px;
 	  height: 50px;
@@ -52,7 +64,6 @@
 	#reflection li {
 		margin-left: 40px;
 	}
-
 	#reflection li::before {
 		width: 30px;
 		margin-left: -40px;
@@ -95,6 +106,17 @@
 
 // Larger than phablet (also point when grid becomes active)
 @media (#{$bp-larger-than-phablet}) {
+	.cs-img-margin,
+	.cs-margin-bottom {
+		.caption {
+			.img-caption-mobile {
+				display: none;
+			} 
+			.img-caption {
+				display: inline;
+			} 
+		}
+	}
 }
 
 // Larger than tablet
@@ -190,6 +212,11 @@
   .logo .left {
     margin-right: 19px;
   }
+	.cs-img-margin {
+		.caption {
+			font-size: 0.85em;
+		}
+	}
 }
 
 // Larger than Desktop HD

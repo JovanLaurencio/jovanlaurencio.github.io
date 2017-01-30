@@ -687,6 +687,16 @@ form {
     margin-bottom: 50px; }
     .case-study:last-of-type {
       margin-bottom: 0; }
+  .cs-img-margin .caption,
+  .cs-margin-bottom .caption {
+    font-size: 0.93em;
+    color: #666;
+    font-weight: 300;
+    margin-top: -15px;
+    text-align: center; }
+    .cs-img-margin .caption .img-caption,
+    .cs-margin-bottom .caption .img-caption {
+      display: none; }
   #skills-btn a {
     width: 60px;
     height: 50px;
@@ -719,6 +729,14 @@ form {
     display: inline-block; }
   nav .nav ul li:nth-child(3) a {
     padding-left: 10px; } }
+
+@media (min-width: 550px) {
+  .cs-img-margin .caption .img-caption-mobile,
+  .cs-margin-bottom .caption .img-caption-mobile {
+    display: none; }
+  .cs-img-margin .caption .img-caption,
+  .cs-margin-bottom .caption .img-caption {
+    display: inline; } }
 
 @media (min-width: 750px) {
   body {
@@ -783,7 +801,9 @@ form {
     display: block;
     margin-top: 40px; }
   .logo .left {
-    margin-right: 19px; } }
+    margin-right: 19px; }
+  .cs-img-margin .caption {
+    font-size: 0.85em; } }
 
 /* Custom */
 html {
