@@ -48,8 +48,10 @@ function chooseCap(cap) {
   }
 }
 
-/** FUNCTION NOT NEEDED FOR RESPONSIVE IMAGES
+/** FUNCTION MODIFIED TO EXCLUDE RESPONSIVE
+ ** IMAGES IN MAIN CONTENT AREA
  ** https://github.com/imulus/retinajs/issues/8
+ **
  * Makes sure that, since we are going to swap out the source of an image,
  * the image does not change size on the page.
  *
@@ -57,18 +59,18 @@ function chooseCap(cap) {
  *
  * @return {Element} The same element that was passed in.
  */
-//function forceOriginalDimensions(image) {
-//  if (!image.hasAttribute('data-no-resize')) {
-//    if (image.offsetWidth === 0 && image.offsetHeight === 0) {
-//      image.setAttribute('width', image.naturalWidth);
-//      image.setAttribute('height', image.naturalHeight);
-//    } else {
-//      image.setAttribute('width', image.offsetWidth);
-//      image.setAttribute('height', image.offsetHeight);
-//    }
-//  }
-//  return image;
-//}
+function forceOriginalDimensions(image) {
+  if ( (image.getAttribute("src").indexOf("headline") > -1) || (image.getAttribute("src").indexOf("nav-logo") > -1) ) {
+    if (image.offsetWidth === 0 && image.offsetHeight === 0) {
+      image.setAttribute('width', image.naturalWidth);
+      image.setAttribute('height', image.naturalHeight);
+    } else {
+      image.setAttribute('width', image.offsetWidth);
+      image.setAttribute('height', image.offsetHeight);
+    }
+  }
+  return image;
+}
 
 /**
  * Determines whether the retina image actually exists on the server.
