@@ -57,8 +57,6 @@
 		}
 	}
 	#skills-btn a {
-	  width: 60px;
-	  height: 50px;
 	  right: 16px;
   }
 	#reflection li {
@@ -106,6 +104,9 @@
 
 // Larger than phablet (also point when grid becomes active)
 @media (#{$bp-larger-than-phablet}) {
+	#skills-btn a {
+	  right: 5%;
+  }
 	.cs-img-margin,
 	.cs-margin-bottom {
 		.caption {
@@ -164,11 +165,7 @@
 	.case-study {
 	  margin-bottom: 80px;
 	}
-	#skills-btn a {
-	  width: 100px;
-	  height: 68px;
-		right: 10px;
-  }
+	
 	#reflection li {
 		margin-left: 50px;
 	}

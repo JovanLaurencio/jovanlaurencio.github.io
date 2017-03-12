@@ -241,23 +241,49 @@ html.can-touch .cs-nav li a:hover{ /* disable hover effect when input is touch *
 	}
 }
 
+// CONTENTS CODE
+//http://jsfiddle.net/markus85/TRuQc/
+//
 #skills-btn {
+	display: none;
 	margin-bottom: 0;
   a {
 		font-family: $font-header-family;
-		background-color: $brtgrn;
 		position: fixed;
-		border-radius: 3px;
-		text-align: center;
 		text-decoration: none;
-		padding-top: 10px;
-		top: 45%;
-		color: $dkrgrn;
+		top: 85%;
 		transition: all 0.3s ease-in-out;
 		z-index: 999;
-		&:hover {
-			background-color: $dkgrn;
-			color:$brtgrn;
+		.up {
+			width: 0px;
+			height: 0px;
+			border-style: inset;
+			border-width: 0 50px 80px 50px;
+			border-color: transparent transparent $brtgrn transparent;
+			transform:rotate(360deg);
+			-ms-transform:rotate(360deg);
+			-moz-transform:rotate(360deg);
+			-webkit-transform:rotate(360deg);
+			-o-transform:rotate(360deg);
+			transition: all 0.3s ease-in-out;
+			p {
+				text-align: center;
+				top: 40px;
+				left: -40px;
+				position: relative;
+				width: 80px;
+				margin: 0px;
+				color: $dkrgrn;
+				transition: all 0.3s ease-in-out;
+				font-size: 12px;
+				line-height: 16px;
+			}
+		}
+	  &:hover .up {
+		  border-color: transparent transparent $dkgrn transparent;;
+	  }
+		&:hover p {
+			color: $brtgrn;
 		}
 	}
 }

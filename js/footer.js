@@ -25,6 +25,18 @@ function oneCoolFact() {
   document.getElementById('cool-fact').innerHTML = myFact;
 }
 
+//
+//http://jsfiddle.net/apaul34208/ZyKar/3/
+//
+$(document).scroll(function () {
+    var y = $(this).scrollTop();
+    if (y > 800) {
+        $('#skills-btn').fadeIn();
+    } else {
+        $('#skills-btn').fadeOut();
+    }
+
+});
 
 peepsOnSite();
 oneCoolFact();

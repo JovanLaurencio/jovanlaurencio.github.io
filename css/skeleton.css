@@ -698,8 +698,6 @@ form {
     .cs-margin-bottom .caption .img-caption {
       display: none; }
   #skills-btn a {
-    width: 60px;
-    height: 50px;
     right: 16px; }
   #reflection li {
     margin-left: 40px; }
@@ -731,6 +729,8 @@ form {
     padding-left: 10px; } }
 
 @media (min-width: 550px) {
+  #skills-btn a {
+    right: 5%; }
   .cs-img-margin .caption .img-caption-mobile,
   .cs-margin-bottom .caption .img-caption-mobile {
     display: none; }
@@ -769,10 +769,6 @@ form {
     margin-right: 12px; }
   .case-study {
     margin-bottom: 80px; }
-  #skills-btn a {
-    width: 100px;
-    height: 68px;
-    right: 10px; }
   #reflection li {
     margin-left: 50px; }
   #reflection li::before {
@@ -999,21 +995,41 @@ html.can-touch .cs-nav li a:hover {
       text-decoration: underline; }
 
 #skills-btn {
+  display: none;
   margin-bottom: 0; }
   #skills-btn a {
     font-family: "Droid Sans Mono", monospace;
-    background-color: #CBEBD9;
     position: fixed;
-    border-radius: 3px;
-    text-align: center;
     text-decoration: none;
-    padding-top: 10px;
-    top: 45%;
-    color: #1D4C31;
+    top: 85%;
     transition: all 0.3s ease-in-out;
     z-index: 999; }
-    #skills-btn a:hover {
-      background-color: #39935E;
+    #skills-btn a .up {
+      width: 0px;
+      height: 0px;
+      border-style: inset;
+      border-width: 0 50px 80px 50px;
+      border-color: transparent transparent #CBEBD9 transparent;
+      transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transition: all 0.3s ease-in-out; }
+      #skills-btn a .up p {
+        text-align: center;
+        top: 40px;
+        left: -40px;
+        position: relative;
+        width: 80px;
+        margin: 0px;
+        color: #1D4C31;
+        transition: all 0.3s ease-in-out;
+        font-size: 12px;
+        line-height: 16px; }
+    #skills-btn a:hover .up {
+      border-color: transparent transparent #39935E transparent; }
+    #skills-btn a:hover p {
       color: #CBEBD9; }
 
 html.can-touch #skills-btn a:hover {
