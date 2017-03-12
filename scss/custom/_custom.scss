@@ -247,11 +247,12 @@ html.can-touch .cs-nav li a:hover{ /* disable hover effect when input is touch *
 #skills-btn {
 	display: none;
 	margin-bottom: 0;
+	top: 75%;
+	right: 16px;
   a {
 		font-family: $font-header-family;
 		position: fixed;
 		text-decoration: none;
-		top: 85%;
 		transition: all 0.3s ease-in-out;
 		z-index: 999;
 		.up {
