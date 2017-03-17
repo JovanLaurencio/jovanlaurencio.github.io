@@ -679,8 +679,11 @@ form {
   .logo-mobile {
     margin-top: 30px; }
   .logo-tablet,
-  .logo-desktop {
+  .logo-desktop,
+  .bio {
     display: none; }
+  .bio-mobile {
+    margin-bottom: 20px; }
   .logo .left {
     margin-right: 6.5px; }
   .case-study {
@@ -698,7 +701,7 @@ form {
     .cs-margin-bottom .caption .img-caption {
       display: none; }
   #skills-btn a {
-    right: 16px; }
+    top: 85%; }
   #reflection li {
     margin-left: 40px; }
   #reflection li::before {
@@ -736,7 +739,11 @@ form {
     display: none; }
   .cs-img-margin .caption .img-caption,
   .cs-margin-bottom .caption .img-caption {
-    display: inline; } }
+    display: inline; }
+  .bio-mobile {
+    display: none; }
+  .bio {
+    display: block; } }
 
 @media (min-width: 750px) {
   body {
@@ -996,12 +1003,13 @@ html.can-touch .cs-nav li a:hover {
 
 #skills-btn {
   display: none;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  top: 75%;
+  right: 16px; }
   #skills-btn a {
     font-family: "Droid Sans Mono", monospace;
     position: fixed;
     text-decoration: none;
-    top: 85%;
     transition: all 0.3s ease-in-out;
     z-index: 999; }
     #skills-btn a .up {

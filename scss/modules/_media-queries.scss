@@ -31,9 +31,14 @@
     margin-top: 30px;
   }
   .logo-tablet,
-  .logo-desktop {
+  .logo-desktop,
+	.bio {
 	display: none;
   }
+	
+	.bio-mobile {
+		margin-bottom: 20px
+	}
   .logo .left {
     margin-right: 6.5px;
   }
@@ -99,7 +104,7 @@
 	}
 	nav .nav ul li:nth-child(3) a {
 		padding-left: 10px;
-	}
+	}	
 }
 
 // Larger than phablet (also point when grid becomes active)
@@ -117,6 +122,12 @@
 				display: inline;
 			} 
 		}
+	}
+	.bio-mobile {
+	  display:none;
+  }
+	.bio {
+		display: block;
 	}
 }
 
