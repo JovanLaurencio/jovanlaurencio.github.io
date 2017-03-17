@@ -37,7 +37,8 @@
   }
 	
 	.bio-mobile {
-		margin-bottom: 20px
+		margin-top: 10px;
+		margin-bottom: 20px;
 	}
   .logo .left {
     margin-right: 6.5px;
@@ -129,6 +130,9 @@
 	.bio {
 		display: block;
 	}
+	.bio-list {
+	  margin: 25px auto 30px; 
+  }
 }
 
 // Larger than tablet
